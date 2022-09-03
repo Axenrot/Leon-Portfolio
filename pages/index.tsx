@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Background from "../components/Background";
+import Navigation from "../components/Navigation";
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +10,9 @@ const Home: NextPage = () => {
         <title>Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Alou
+      <div className="container border">
+        <Navigation />
+      </div>
     </Background>
   );
 };

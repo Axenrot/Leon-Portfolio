@@ -1,6 +1,6 @@
 const Background = ({ children }) => {
   return (
-    <div className="bg-gradient-to-r from-black to-white w-[100vw] h-[100vh] text-lg">
+    <div className="flex bg-fadingblack w-[100vw] h-[100vh] text-lg justify-center">
       {children}
     </div>
   );

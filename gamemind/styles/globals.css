@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  p {
+    padding: 6px 0;
+    line-height: 1.65rem;
+    letter-spacing: 0.025em;
+    color: #212d46;
+  }
+
+  h2 {
+    color: #212d46;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .avantasiabg {
+    background-image: linear-gradient(60deg, #000000 0%, #ffffff 100%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn ease-out;
+}
+
+.fade-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-right {
+  animation: fadeInRight 1s ease-out;
+}
+
+.btn-outline {
+  @apply transition-all duration-300 text-white py-3 px-8 border-2 rounded-full cursor-pointer hover:bg-white hover:text-pink border-white shadow-xl;
+}
+.btn-primary {
+  @apply transition-all duration-300 text-white bg-pinkbutton border-pinkbutton hover:bg-white hover:text-pink border-2 rounded-full px-8 py-3;
+}
+.btn-nav {
+  @apply transition-all duration-300 text-sm bg-pinkbutton2 hover:bg-purplebg2 shadow-xl text-white py-2 px-3 m-1 rounded-md;
+}
